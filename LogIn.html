@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign In</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="x-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="login.css">
+        <style type="text/css">
+        
+        body{
+			padding: 40px;
+			margin: 10px;
+		}
+
+        .parent{
+            display: flex;
+
+        }
+
+		img{
+			margin: auto;
+		}
+
+        .form{
+			 width: 100%;
+			 padding-right: 10px;
+			 padding-bottom: 10px;
+			 margin: 2pc auto auto auto;
+			 font-size: 25px;
+			 text-align: center;
+		}
+
+        fieldset{
+            width:70%;
+			border: 2px solid;
+			border-radius: 10px;
+		}
+
+		legend{
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			font-size: 18pt;
+			color: rgb(1, 24, 16)
+		}
+
+		textarea {
+			height: 100px;
+			border-radius: 10px;
+		}
+
+		input {
+			margin-bottom: 10px;
+			font-size: 11pt;
+			padding: 15px 10px 10px;
+			border: 1px solid #cecece;
+			background-color: #efefef;
+			color: #787575;
+			border-radius: 5px;
+			outline: none;
+		}
+
+		button{
+			background-color: #0f031d9f;
+			height: 50px;
+			font-family: monospace;
+			font-size: 15px;
+			text-align: center;
+			line-height: 1.2;
+			text-transform: uppercase;
+			letter-spacing: 1px; 
+		}
+
+		.submit{
+			width: 70%;
+			color: #0505302a;
+			padding: 12px;
+			border-radius: 5px;
+			cursor: pointer;
+			text-align: center;
+			margin-bottom: 15px;
+			
+		}
+
+		.submit:hover{
+			background-color:rgb(201, 212, 184);
+		}
+
+		.psw a{
+			font-size: 13px;
+			line-height: 1.4;
+			color: #5e15b69f;
+		}
+
+		.sign{
+			padding-bottom: 20px;
+			padding-top: 46px;
+			text-align: center;
+		}
+
+		.footer{
+	  	 font-family:monospace;
+		 font-size:24px;
+		 text-decoration:underline;
+		 padding: 10px;
+		 text-align: left;
+		}
+
+        @media screen and(max-width:320px){
+	
+			img{
+				width: 90%;
+				height: 200px;
+				display: none;
+			}
+			.form{
+				width: 100%;
+			}
+
+	}
+        </style>
+    </head>
+</html>
+<body>
+    <div class="parent">
+            <div><img style="width: 75%;" src="images/kitchen2.jpg"></div>
+                    <section class="form">
+                                    <div class="welcome"><h2>Hello,<br>Welcome Back</h2></div>
+            <!--Step 1:Adding HTML-->
+            <fieldset id=“single”>
+              <legend style="text-align: left;">Login</legend>
+            <!--Form Section-->
+            <form action="/action_page.php">
+               <label><b>Username</b></label><br>
+               <input type="text" placeholder="Enter Username" name="uname" required><br>
+            <br>
+            
+                 <label><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" name="psw" required><br>
+            <br>
+            <section class="btn">
+                <button class="submit" >Login</button><br>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+            </section>
+            </form> 
+            </fieldset>
+                </section>
+            </section>
+    </div>
+</div><br>
+<!--Footer-->
+<footer class="footer">&copy;Mahryam's Kitchen 2020. Developed by Law_Dev</footer>
+</body>
+</html>
